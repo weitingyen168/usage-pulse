@@ -3,6 +3,8 @@ __pycache__/
 .venv/
 venv/
 .pytest_cache/
+.coverage
+htmlcov/
 data/ci_events.csv
 *.egg-info/
 .DS_Store

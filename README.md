@@ -1,6 +1,8 @@
 # usage-pulse
 
-![CI](https://github.com/weitingyen168/usage-pulse/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/weitingyen168/usage-pulse/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/weitingyen168/usage-pulse/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 
 A **zero-dependency** Python CLI that turns a messy product-usage events CSV into
 a one-screen **weekly health report** — cleaning the data, computing
@@ -102,7 +104,10 @@ pytest -q
 ```
 
 Tests are fully offline and cover cleaning, session-weighting, rating coverage,
-and change detection.
+and change detection. `pytest.ini` enables coverage by default
+(`--cov=usage_pulse --cov-report=term-missing`), so a per-module coverage summary
+prints after every run and in CI. The CLI wrapper is exercised by the
+smoke-test step in CI rather than by unit tests.
 
 ## Project layout
 

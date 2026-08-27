@@ -1,3 +1,4 @@
 # The tool itself is dependency-free (standard library only).
 # This is only needed to run the test suite.
 pytest>=8.0.0
+pytest-cov==7.1.0
